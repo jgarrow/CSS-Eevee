@@ -1,0 +1,40 @@
+// Colors
+@grass: rgba(152, 237, 73);
+@sky: rgba(43, 213, 242);
+@ear-border: #cda25d;
+@head: radial-gradient(circle, rgba(232,201,111,1) 40%, rgba(178,123,74,1) 100%);
+@chest-fur: rgb(253, 250, 210);
+@chest-hairs: #C0A26C;
+@eye-white: rgba(241, 244, 245);
+@eye-bg: rgba(40, 15, 15);
+@eye-color: rgba(159,86,121);
+@eye-color-edges: rgba(88,36,70);
+@inner-ear: radial-gradient(ellipse 80% 90% at 90% 80%, rgba(82,50,29,1) 40%, rgba(59,30,22,1) 100%);
+@nose: rgb(113, 87, 26);
+
+// Ear twitch animation duration random number
+
+// Mixins
+.background() {
+    // background-image: linear-gradient(0deg, @grass 10%, @sky 60%);
+    background-image: url('http://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.flex-container(@justifyContent, @alignItems) {
+    display: flex;
+    justify-content: @justifyContent;
+    align-items: @alignItems;
+}
+
+// .randomNum(@min: 0, @max: @min - 1, @int: 0) {
+//     .checkInt() {
+//         @getNum: `Math.random() * (@{max} - @{min} + @{int})`;
+//         @base: unit(`@{int} == 1 ? Math.floor(@{getNum}) : @{getNum}`);
+//     }
+//     .checkInt();
+//     @seconds: "s";
+//     @randNum: @base + @min@seconds;
+// }

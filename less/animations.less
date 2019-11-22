@@ -1,0 +1,88 @@
+
+// Blinks twice per iteration
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    18% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    38% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    45% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+  }
+
+//   Wags twice per iteration
+@keyframes tailWag {
+    0% {
+        transform: rotate(13deg) skewX(-9deg) skewY(-8deg);
+        transform-origin: bottom right;
+    }
+
+    25% {
+        transform: rotate(11deg) skewX(-9deg) skewY(-8deg);
+        transform-origin: bottom right;
+    }
+
+    50% {
+        transform: rotate(13deg) skewX(-9deg) skewY(-8deg);
+        transform-origin: bottom right;
+    }
+
+    75% {
+        transform: rotate(11deg) skewX(-9deg) skewY(-8deg);
+        transform-origin: bottom right;
+    }
+
+    100% {
+        transform: rotate(13deg) skewX(-9deg) skewY(-8deg);
+        transform-origin: bottom right;
+    }
+}
+
+@keyframes leftEarTwitch {
+    0%, 30% {
+        transform: rotateY(180deg) skewX(-15deg) skewY(5deg) rotate(-23deg);
+        transform-origin: bottom left;
+    }
+
+    20% {
+        transform: rotateY(180deg) rotate(-2deg);
+        transform-origin: bottom left;
+    }
+
+}
+
+@keyframes rightEarTwitch {
+    60%, 80% {
+        transform: skewX(-15deg) skewY(5deg) rotate(-23deg);
+        transform-origin: bottom left;
+    }
+
+    70%, 90% {
+        transform: rotate(-2deg);
+        transform-origin: bottom left;
+    }
+}
+
+// Animations to add:
+// bigger smile while being pet
+// ear twitch?
+// body sway?
+// body bounce?
+// extra 'happy' eyes -- right after being pet? or after being pet for X amount of time?

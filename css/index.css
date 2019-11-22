@@ -1,0 +1,688 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  bottom: -0.25em;
+}
+img {
+  border-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+@keyframes tailWag {
+  0% {
+    transform: rotate(13deg) skewX(-9deg) skewY(-8deg);
+    transform-origin: bottom right;
+  }
+  25% {
+    transform: rotate(11deg) skewX(-9deg) skewY(-8deg);
+    transform-origin: bottom right;
+  }
+  50% {
+    transform: rotate(13deg) skewX(-9deg) skewY(-8deg);
+    transform-origin: bottom right;
+  }
+  75% {
+    transform: rotate(11deg) skewX(-9deg) skewY(-8deg);
+    transform-origin: bottom right;
+  }
+  100% {
+    transform: rotate(13deg) skewX(-9deg) skewY(-8deg);
+    transform-origin: bottom right;
+  }
+}
+@keyframes leftEarTwitch {
+  0%,
+  30% {
+    transform: rotateY(180deg) skewX(-15deg) skewY(5deg) rotate(-23deg);
+    transform-origin: bottom left;
+  }
+  20% {
+    transform: rotateY(180deg) rotate(-2deg);
+    transform-origin: bottom left;
+  }
+}
+@keyframes rightEarTwitch {
+  60%,
+  80% {
+    transform: skewX(-15deg) skewY(5deg) rotate(-23deg);
+    transform-origin: bottom left;
+  }
+  70%,
+  90% {
+    transform: rotate(-2deg);
+    transform-origin: bottom left;
+  }
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('http://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eevee {
+  width: 400px;
+  height: 325px;
+  margin: 0 auto;
+  position: absolute;
+}
+.eevee .ears {
+  width: 50%;
+  height: 65%;
+  position: relative;
+  margin: 0 auto;
+  z-index: -1;
+}
+.eevee .ears .ear {
+  width: 80%;
+  height: 45%;
+  position: absolute;
+  background: radial-gradient(ellipse 80% 90% at 90% 80%, #52321d 40%, #3b1e16 100%);
+  border: 8px solid #cda25d;
+  background-color: transparent;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  transform-origin: bottom left;
+}
+.eevee .ears .ear.rightEar {
+  top: 93px;
+  left: 153px;
+  transform: skewX(-15deg) skewY(5deg) rotate(-23deg);
+  transform-origin: bottom left;
+}
+.eevee .ears .ear.rightEar.twitch {
+  animation: rightEarTwitch 1.5s infinite;
+  animation-delay: 1.5s;
+}
+.eevee .ears .ear.leftEar {
+  top: 93px;
+  left: 47px;
+  transform: rotateY(180deg) skewX(-15deg) skewY(5deg) rotate(-23deg);
+  transform-origin: bottom left;
+}
+.eevee .ears .ear.leftEar.twitch {
+  animation: leftEarTwitch 1.2s infinite;
+  animation-delay: 1.75s;
+}
+.eevee .head {
+  width: 165px;
+  height: 185px;
+  cursor: grab;
+  margin: 0 auto;
+  position: relative;
+  top: -92px;
+  border-top-left-radius: 50% 80px;
+  border-top-right-radius: 50% 80px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background: radial-gradient(circle, #e8c96f 40%, #b27b4a 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eevee .head .face {
+  width: 78%;
+  height: 70%;
+  top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 20px;
+}
+.eevee .head .face .eyes {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.eevee .head .face .eyes.is-visible {
+  display: flex;
+  animation: blink 4s infinite;
+}
+.eevee .head .face .eyes .eye {
+  width: 25%;
+  height: 105%;
+  position: relative;
+  background-color: rgba(40, 15, 15);
+  border: 4px solid rgba(40, 15, 15);
+  border-bottom-left-radius: 50% 35%;
+  border-bottom-right-radius: 50% 35%;
+  border-top-right-radius: 50% 60%;
+  border-top-left-radius: 50% 60%;
+  background-image: radial-gradient(ellipse 6px 12px at 50% 60%, rgba(40, 15, 15) 0%, rgba(40, 15, 15) 99%, transparent 100%), radial-gradient(ellipse 11px 15px at 50% 95%, rgba(159, 86, 121) 0%, rgba(159, 86, 121) 99%, transparent 100%), radial-gradient(ellipse 14px 26px at 50% 90%, rgba(88, 36, 70) 0%, rgba(88, 36, 70) 99%, transparent 100%), radial-gradient(ellipse 5px 8px at 51% 19%, rgba(241, 244, 245) 0%, rgba(241, 244, 245) 99%, transparent 100%);
+}
+.eevee .head .face .eyes .eye:after {
+  width: 30%;
+  height: 25%;
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: 65%;
+  transform: rotate(-39deg);
+  border-radius: 100%;
+  border-right: 3px solid rgba(40, 15, 15);
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  opacity: 0.4;
+}
+.eevee .head .face .eyes .eye:last-child {
+  right: 0;
+}
+.eevee .head .face .eyes .eye:last-child:after {
+  transform: rotate(35deg) rotateY(-180deg);
+  left: -10%;
+}
+.eevee .head .face .closed-eyes {
+  width: 90%;
+  height: 50%;
+  display: none;
+}
+.eevee .head .face .closed-eyes.is-visible {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.eevee .head .face .closed-eyes .closed-eye {
+  width: 25%;
+  height: 90%;
+  background-image: none;
+  background-color: transparent;
+  border-bottom: 4px solid rgba(40, 15, 15);
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom-left-radius: 50% 35%;
+  border-bottom-right-radius: 50% 35%;
+}
+.eevee .head .face .blink {
+  display: none;
+}
+.eevee .head .face .blink.is-visible {
+  display: flex;
+}
+.eevee .head .face .blink .blink-eye:after {
+  display: none;
+}
+.eevee .head .face .nose {
+  width: 20px;
+  height: 17px;
+}
+.eevee .head .face .nose .outer {
+  width: 20px;
+  height: 17px;
+  overflow: hidden;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.eevee .head .face .nose .outer .inner {
+  width: 13px;
+  height: 13px;
+  position: relative;
+  top: -5px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: #71571a;
+  transform: rotate(45deg);
+}
+.eevee .head .face .mouth {
+  width: 34px;
+  height: 16px;
+  position: relative;
+  border-top: 2.25px solid #71571a;
+  border-bottom: 1px solid rgba(113, 87, 26, 0);
+  border-left: 1px solid rgba(113, 87, 26, 0);
+  border-right: 1px solid rgba(113, 87, 26, 0);
+  border-radius: 49%;
+}
+.eevee .head .face .mouth:before,
+.eevee .head .face .mouth:after {
+  content: "";
+  position: absolute;
+  border-bottom: 1.5px solid #71571a;
+  border-top: 1px solid rgba(113, 87, 26, 0);
+  border-left: 1px solid rgba(113, 87, 26, 0);
+  border-right: 1px solid rgba(113, 87, 26, 0);
+  border-radius: 50%;
+  width: 24px;
+  height: 13px;
+}
+.eevee .head .face .mouth:before {
+  left: 28px;
+  top: -9.9px;
+  border-bottom-left-radius: 44%;
+  border-bottom-right-radius: 50%;
+}
+.eevee .head .face .mouth:after {
+  left: -20px;
+  top: -10.9px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 44%;
+}
+.eevee .tail {
+  width: 60%;
+  height: 233px;
+  transform-origin: bottom right;
+  transform: rotate(13deg) skewX(-9deg) skewY(-8deg);
+  border-bottom-left-radius: 100%;
+  border-top-right-radius: 100%;
+  position: absolute;
+  top: 177px;
+  left: -45px;
+  z-index: -3;
+  background-image: linear-gradient(95deg, #efdbb6 5%, #C0A26C);
+  animation: tailWag 3s infinite ease-in-out;
+}
+.eevee .tail.is-being-pet {
+  animation: tailWag 1s infinite ease-in-out;
+}
+.eevee .tail:before,
+.eevee .tail:after {
+  position: absolute;
+  content: '';
+}
+.eevee .tail:before {
+  width: 90%;
+  height: 175px;
+  transform: rotate(2deg) translate(20px, 55px);
+  border-bottom-left-radius: 100%;
+  border-top-right-radius: 81% 12%;
+  background-image: linear-gradient(30deg, #b27b4a 20%, #cda25d 50%);
+}
+.eevee .tail:after {
+  width: 63%;
+  height: 120px;
+  border-bottom-left-radius: 100%;
+  border-top-right-radius: 95%;
+  transform: rotate(-2deg) translate(54px, 29px) skewY(5deg);
+  background-image: linear-gradient(28deg, #cda25d 45%, #e8c96f);
+}
+.eevee .body {
+  width: 60%;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  top: -104px;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.eevee .body .fur {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  background-image: radial-gradient(farthest-corner at 50px 20px, #fcf3e4, #efdbb6, #c5915d);
+}
+.eevee .body .fur:first-child {
+  width: 35%;
+  height: 70%;
+  border-radius: 100%;
+  box-shadow: inset -1px -3px rgba(0, 0, 0, 0.2), inset -1px 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: -2px;
+  left: 25px;
+}
+.eevee .body .fur:first-child > .hairs {
+  position: relative;
+  z-index: 1;
+}
+.eevee .body .fur:first-child > .hairs:after {
+  position: absolute;
+  top: 35px;
+  left: 134px;
+  content: '';
+  width: 40px;
+  height: 40px;
+  transform: rotate(-35deg);
+  border-bottom-right-radius: 75%;
+  border-top-right-radius: 10%;
+  box-shadow: 1px 1px #c5915d;
+  background-image: linear-gradient(37deg, #c0762c 1%, #efdbb6 55%, rgba(239, 219, 182, 0) 56%);
+}
+.eevee .body .fur:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  border-radius: 100%;
+  box-shadow: inset 0 0 0 2px rgba(192, 118, 44, 0.4), 3px 0 15px rgba(192, 118, 44, 0.4), -3px 0 15px rgba(192, 118, 44, 0.4);
+  z-index: 2;
+  position: absolute;
+  left: 25%;
+  top: -8%;
+}
+.eevee .body .fur:nth-child(2) > .hairs {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.eevee .body .fur:nth-child(2) > .hairs:before,
+.eevee .body .fur:nth-child(2) > .hairs:after {
+  width: 50px;
+  height: 60px;
+}
+.eevee .body .fur:nth-child(2) > .hairs:before {
+  position: absolute;
+  content: '';
+  transform: rotate(35deg) skewX(25deg);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 10%;
+  box-shadow: 0 3px #C0A26C;
+  background-image: linear-gradient(-37deg, #c0762c, #d4bc8e 18%, rgba(212, 188, 142, 0) 39%);
+  top: 31%;
+  left: 14%;
+}
+.eevee .body .fur:nth-child(2) > .hairs:after {
+  position: absolute;
+  content: '';
+  transform: rotate(-35deg) skewX(-25deg);
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 10%;
+  box-shadow: 0 3px #C0A26C;
+  background-image: linear-gradient(37deg, #c0762c, #d4bc8e 18%, rgba(212, 188, 142, 0) 39%);
+  top: 31%;
+  left: 48%;
+}
+.eevee .body .fur:last-child {
+  width: 35%;
+  height: 70%;
+  border-radius: 100%;
+  box-shadow: inset 0 -3px rgba(0, 0, 0, 0.2), inset 0 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: -2px;
+  left: 127px;
+}
+.eevee .body .fur:last-child > .hairs {
+  position: relative;
+}
+.eevee .body .fur:last-child > .hairs:after {
+  position: absolute;
+  top: 35px;
+  left: -91px;
+  content: '';
+  width: 40px;
+  height: 40px;
+  transform: rotate(35deg);
+  border-bottom-left-radius: 75%;
+  border-top-left-radius: 10%;
+  box-shadow: -1px 1px #c5915d;
+  background-image: linear-gradient(-37deg, #c0762c 1%, #d4bc8e 45%, rgba(212, 188, 142, 0) 70%);
+}
+.eevee .back-legs {
+  width: 90%;
+  height: 25%;
+  margin: 0 auto;
+  position: relative;
+  top: -134px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.eevee .back-legs .leg {
+  position: relative;
+  width: 85px;
+  height: 80px;
+  border-radius: 100%;
+  z-index: -2;
+}
+.eevee .back-legs .leg:first-child {
+  background-image: linear-gradient(to right, #e8c96f, #b27b4a);
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 10%;
+  transform: skewY(12deg);
+}
+.eevee .back-legs .leg:first-child .foot {
+  transform: skewY(-12deg);
+  left: 10px;
+}
+.eevee .back-legs .leg:last-child {
+  background-image: linear-gradient(to left, #e8c96f, #b27b4a);
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 10%;
+  transform: skewY(-12deg);
+}
+.eevee .back-legs .leg:last-child .foot {
+  transform: skewY(12deg);
+  left: 16px;
+}
+.eevee .back-legs .leg .foot {
+  position: relative;
+  top: 57px;
+  width: 58px;
+  height: 40px;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  border-top-right-radius: 50% 50%;
+  border-top-left-radius: 50% 50%;
+  background: linear-gradient(to bottom, #e8c96f 0%, #b27b4a 40%, transparent 100%), linear-gradient(to right, transparent 0%, transparent 25%, rgba(0, 0, 0, 0.5) 26%, rgba(0, 0, 0, 0.5) 35%, transparent 36%, transparent 65%, rgba(0, 0, 0, 0.5) 66%, rgba(0, 0, 0, 0.5) 75%, transparent 76%), linear-gradient(to bottom, transparent 0%, #b27b4a 40%, #71571a 100%);
+}
+.eevee .front-legs {
+  width: 80%;
+  height: 25%;
+  margin: 0 auto;
+  position: relative;
+  top: -199px;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eevee .front-legs .leg {
+  width: 55px;
+  height: 90px;
+}
+.eevee .front-legs .leg:first-child {
+  position: relative;
+  top: -19px;
+  transform: skewX(4deg);
+  background-image: linear-gradient(to left, #e8c96f, #b27b4a);
+}
+.eevee .front-legs .leg:last-child {
+  position: relative;
+  top: -19px;
+  left: 5px;
+  transform: skewX(-2deg);
+  background-image: linear-gradient(to right, #e8c96f, #b27b4a);
+}
+.eevee .front-legs .leg .foot {
+  width: 64px;
+  height: 44px;
+  position: relative;
+  top: 69px;
+  left: -5px;
+  z-index: 1;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  border-top-right-radius: 50% 50%;
+  border-top-left-radius: 50% 50%;
+  background: linear-gradient(to bottom, #e8c96f 0%, #b27b4a 40%, transparent 100%), linear-gradient(to right, transparent 0%, transparent 25%, rgba(0, 0, 0, 0.5) 26%, rgba(0, 0, 0, 0.5) 35%, transparent 36%, transparent 65%, rgba(0, 0, 0, 0.5) 66%, rgba(0, 0, 0, 0.5) 75%, transparent 76%), linear-gradient(to bottom, transparent 0%, #b27b4a 40%, #71571a 100%);
+}
+.eevee .front-legs .torso {
+  width: 20px;
+  height: 90px;
+  margin: 0 auto;
+  background-image: radial-gradient(circle, #b27b4a, #e8c96f);
+  position: absolute;
+  z-index: -5;
+}
